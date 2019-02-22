@@ -178,7 +178,7 @@ def populate_detectors():
         r = calcR(population[1])  # calculating the new radius for the 2nd Best detector
         if (r > 0):  # Appending if valid
             detector.append(population[1])
-            detector_rad.append(pop_rad[1])
+            detector_rad.append(r)
             i += 1
             print("INFO: Appending Detector " + str(i) + " " + " ".join(
                 str(x) for x in population[1]) + " Radius: " + str(r))
